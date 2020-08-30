@@ -1,0 +1,209 @@
+/* Body bckground */
+body{
+  background-color: #ffffff;
+  text-align: right;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Nav bar */
+#nav{
+  position: right;
+  width: 100%;
+  top: 100%;
+  /* left: 50%; */
+}
+
+/* Left aligned logo */
+.logo{
+  float: left;
+  width: 0%;
+  height: 10px;
+  padding-top: 1%;
+  padding-left: 3%;
+}
+
+/* Glowing hover box around each menu item */
+.box{
+  text-decoration: none;
+  color: #3081a3;
+  background: transparent;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #3081a3;
+  margin: 10px 10px;
+  display: inline-block;
+}
+
+.box:hover{
+  border: 0;
+  box-shadow: 0 0 3px #14626c, 0 0 7px #14626c, 0 0 20px #14626c;
+}
+
+.container{
+  height: 200px;
+  background-color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  display: block;
+
+
+}
+
+.h1{
+
+  font-size: 50px;
+  color: #3081a3;
+  float: left;
+  padding: 10px;
+}
+
+
+.p{
+  font-size: 15px;
+  color: #3081a3;
+  float: center;
+  margin-top: 10px;
+  left: 100%;
+
+}
+
+
+
+
+
+/* footer */
+.footer{
+  display:block;
+  margin-top: 0;
+  width: 100%;
+  height: 250px;
+  background-position: center center;
+  /* background-size: cover; */
+  background-color: #ffffff;
+}
+
+.inner_footer{
+
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+
+/* showing the logo at the bottom right in footer */
+.inner_footer .logo_container{
+  width: 35%;
+  float:right;
+  height: 20%;
+  display: block;
+  padding: 70px 10px;
+}
+
+.inner_footer .logo_container img{
+  width: 95px;
+  height: auto;
+}
+
+
+/* Address text */
+.inner_footer .add{
+  font-size: 15px;
+  color: #3081a3;
+  text-align: center center center;
+  padding: 10px;
+}
+
+/* Email address */
+.inner_footer .em{
+  font-size: 15px;
+  color: #3081a3;
+  position: absolute;
+  left: 42%;
+  text-align: center;
+}
+
+/* Social media icons - cool hovering */
+.inner_footer .social-icons {
+  padding: 0;
+  list-style: none;
+  margin: 1em;
+
+}
+
+.inner_footer .social-icons li {
+  display: inline-block;
+  margin: 0.15em;
+  position: relative;
+  font-size: 1.5em;
+  right: 2%;
+  text-align: center;
+
+}
+
+.inner_footer .social-icons i {
+  color: #ffffff;
+  position: absolute;
+  top: 21px;
+  left: 21px;
+  transition: all 265ms ease-out;
+}
+
+.inner_footer .social-icons a {
+  display: inline-block;
+}
+
+/* gradient style before hovering in orange and yellow*/
+.inner_footer .social-icons a:before {
+  @include transformScale();
+  content: " ";
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  display: inline-block;
+  background: linear-gradient(50deg, #14626c, #3081a3);
+  transition: all 265ms ease-out;
+}
+
+.inner_footer .social-icons a:hover:before {
+  transform: scale(0);
+  transition: all 265ms ease-in;
+}
+
+/* gradient style after hovering in orange and yellow*/
+.inner_footer .social-icons a:hover i {
+  @include transformScale(2.2);
+  color: #14626c;
+  background: -webkit-linear-gradient(45deg, #14626c, #3081a3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 265ms ease-in;
+
+}
+
+/* Subscribe link */
+.inner_footer .sub{
+  font-size: 17px;
+  color: #3081a3;
+  position: absolute;
+  left: 46%;
+  text-align: center;
+  padding: none;
+}
+
+/* adds the underline under the link */
+.inner_footer .sub a{
+  text-decoration: underline;
+  color: #3081a3;
+}
+
+/* Copyright text in orange at bottom */
+.inner_footer .cpy{
+  font-size: 12px;
+  color: #3081a3;
+  position: absolute;
+  left: 44%;
+  text-align: center;
+  padding: none;
+}
